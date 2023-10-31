@@ -1,57 +1,64 @@
-<doctype HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <body>
-        <meta charset="uft-8">
-        <title> Eli's birthdayparty "inbetween the Years"</title>
-            
-            <div class="DVD">
-            <marquee behavior="alternate"=scrollamout="30" direction="up">
-                <marquee behavior="alternate"=scrollamout="30" direction="right">
-                    <marquee behavior="alternate"=scrollamout="30" direction="up">
-            <marquee behavior="alternate"=scrollamout="30" direction="down">
-                
-                <a href="Savethedate.html">
-                <img src="DVD_ELI.png">
-                
-                </a>
-                </marquee>
-                </marquee>
-            </div>
-                
-                
-                
-                
-            <style>
-                
-                body {
-                    background-color: black;
-                    width: 100%;
-                    height: auto;
-                }
-                
-                img {
-                    
-          background-image: url(DVD_ELI.png);
-           height: 20vh;
+<head>
+    <style>
+        #floating-image {
+            position: absolute;
+              height: 20vh;
            background-size:contain;
            background-repeat: no-repeat;
            background-position: center center;
            margin: 0;
            padding: 0;
-
-       }
-                
-                
-                marquee {
-                    height: 100vh;
-                } 
-                  
-                    
-                }
-            </style>
             
-        </body>
-    </head>
-    </html>
-</doctype>
+        }
+        
+        body {
+                    background-color: black;
+                    width: 100%;
+                    height: 100%;
+                }
+    </style>
+</head>
+<body>
+    <a href="Savethedate.html">
+
+    <img id="floating-image" src="DVD_ELI.png"  alt="Floating Image">
+        </a>
+    <script>
+        // Get a reference to the floating image element
+        const floatingImage = document.getElementById('floating-image');
+
+        // Set initial position and speed
+        let x = 0;
+        let y = 0;
+        let xSpeed = 2;
+        let ySpeed = 2;
+
+        // Function to update the position of the floating image
+        function updatePosition() {
+            x += xSpeed;
+            y += ySpeed;
+
+            const screenWidth = window.innerWidth - floatingImage.width;
+            const screenHeight = window.innerHeight - floatingImage.height;
+
+            if (x > screenWidth || x < 0) {
+                xSpeed *= -1;
+            }
+
+            if (y > screenHeight || y < 0) {
+                ySpeed *= -1;
+            }
+
+            floatingImage.style.left = x + 'px';
+            floatingImage.style.top = y + 'px';
+
+            requestAnimationFrame(updatePosition);
+        }
+
+        // Start the animation
+        updatePosition();
+    </script>
+</body>
+</html>
