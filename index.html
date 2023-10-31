@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    
     <style>
         #floating-image {
             position: absolute;
@@ -18,9 +20,37 @@
                     width: 100%;
                     height: 100%;
                 }
+        
+        .CLICK{
+        top: 50%;
+            left: 50%;
+            position: absolute;
+            text-transform: translate (-50%,-50%)  
+        }
+        
+        span{
+            font-family: serif;
+            color: chartreuse;
+            text-transform: uppercase;
+            animation:blink 3s linear infinite;
+        }
+        
+        @keyframes blink {
+            0%{opacity:0;};
+            50%{opacity: .5;};
+            100%{opacity: 1;}
+        }
     </style>
+
 </head>
+
 <body>
+    
+    <link rel="icon" href="DVD_ELI.png" type="imange/x-icon">
+
+        <title> ELI</title>
+    
+    <div class="CLICK"><span>CATCH-ELI</span></div>
     <a href="Savethedate.html">
 
     <img id="floating-image" src="DVD_ELI.png"  alt="Floating Image">
