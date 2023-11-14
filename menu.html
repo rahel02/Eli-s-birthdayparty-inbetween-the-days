@@ -11,31 +11,26 @@
             margin: 0;
             font-family: 'silkscreen';
             color: white;
-      
         }
         
         #dvd-menu {
             width: 600px;
             margin: 100px auto;
             padding: 20px;
-             background-color: rgba(0, 0, 0, 0.5);
-               color:coral;
-            font-family:'silkscreen' ;
-               align-content: center;
-                letter-spacing: 3px;
-                border-right: 2px solid;
-                width: 100%;
-                white-space: nowrap;
-                overflow: hidden;
-            background-color: transparent;
+            background-color: transparent; /* Set the initial background to transparent */
+            border-radius: 10px;
+            color: coral;
+            font-family: 'silkscreen';
+            letter-spacing: 3px;
+            border-right: 2px solid;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
             text-align: center;
-            ;
-        
         }
 
         p {
             font-size: 15px;
-            
         }
 
         ul {
@@ -49,63 +44,53 @@
 
         a {
             text-decoration: none;
-            color: blueviolet;
+            color: coral;
             font-size: 24px;
-             transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
+            opacity: 1;
         }
 
         a:hover {
             text-decoration: underline;        
-    background-color: coral; /* Change background color on hover */
-    color: #000; /* Change text color on hover */
-   
-}
+            background-color: blueviolet;
+            color: #000;
+        }
+
         .highlight {
-    background-color: blueviolet;
-        
-}
+            color: coral;
+        }
 
- @font-face {
-    font-family: 'silkscreen';
-    src: url('silkscreen_bold_macroman.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+        .container {
+            background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
+            padding: 10px;
+            border-radius: 1px;
+            text-align: center;
+        }
 
-}
-         @font-face {
-    font-family: 'silkscreen';
-    src: url('silkscreen_expandednormal.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-         @font-face {
-    font-family: 'silkscreen';
-    src: url(silkscreenexpanded_bold_macroman.woff') format('woff');
-    font-weight: bold;
-    font-style: bold;
-
-}
+        @font-face {
+            font-family: 'silkscreen';
+            src: url('silkscreenexpanded_bold_macroman.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
-    <div id="dvd-menu" class="highlight">
-        <span class="highlight">
-   
-            <p><span class="highlight">Hallo Zusammen,</span></p>
-            <p><span class="highlight">Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</span></p>
-            <p><span class="highlight">Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</span></p>
-                
-             
-            <p> <span class="highlight"> <b> Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€ </b></span></p>
-            <p><span class="highlight">Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.</span></p>
-            <p><span class="highlight">Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</span></p>
-                
-            <p><span class="highlight">Dat wird überajend!!</span></p>
-        </span>
+    <div id="dvd-menu">
+        <div class="container">
+            <span class="highlight">
+                <p>Hallo Zusammen,</p>
+                <p>Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</p>
+                <p>Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</p>
+                <p><b>Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€</b></p>
+                <p>Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.</p>
+                <p>Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</p>
+                <p></p>
+            </span>
+        </div>
        
         <ul>
-            <li><a href="https://www.paypal.com/paypalme/eliasdiederundich">Klick hier, um zu bezahlen</a></li>
+            <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">Klick hier,um dir deinen Eirtitt zu sichern</a></li>
             <li><a href="#">More info coming soon</a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
