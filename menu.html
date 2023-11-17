@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
         body {
-            background-image: url('Line-eli-dvd.png'); 
+            margin: 0;
+            font-family: 'ambleregular';
+            color: black;
+            overflow: hidden;
+            /* Hide overflow to prevent scrollbars */
+            background-color: black;
+        }
+
+        #top-image { background-image: url('Eli-s-line.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 17vh;
+            background-size: 20%;
+    z-index: 1; 
+   
+    align-items: center;     
+        }
+   
+
+        #frame-container {
+             
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: black;
-            margin: 0;
-            font-family: 'silkscreen';
-            color: white;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            z-index: 2; /* Send the frame to the back */
         }
-        
+
+        #content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative; /* Ensure relative positioning for child elements */
+        }
+
         #dvd-menu {
             width: 600px;
-            margin: 100px auto;
             padding: 20px;
             background-color: transparent; /* Set the initial background to transparent */
             border-radius: 10px;
-            color: coral;
-            font-family: 'silkscreen';
+       
+            font-family: 'ambleregular','amblebold';
             letter-spacing: 3px;
             border-right: 2px solid;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
             text-align: center;
         }
 
@@ -55,7 +81,11 @@
             background-color: blueviolet;
             color: #000;
         }
-
+h1:hover {
+            text-decoration: underline;        
+            background-color: blueviolet;
+            color: #000;
+        }
         .highlight {
             color: coral;
         }
@@ -63,39 +93,56 @@
         .container {
             background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
             padding: 10px;
-            border-radius: 1px;
+            border: 2px;
+            max-width: 97vh;
+            border-radius: 10vh;
             text-align: center;
+            margin: 0 auto; /* Center the container horizontally */
         }
 
         @font-face {
-            font-family: 'silkscreen';
-            src: url('silkscreenexpanded_bold_macroman.woff') format('woff');
-            font-weight: bold;
-            font-style: normal;
-        }
+    font-family: 'ambleregular';
+    src:url('Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        @font-face {
+    font-family: 'ambleregular';
+    src: url('Amble-Bold-webfont.woff') format('woff');
+         
+   font-weight: Bold;
+    font-style: Bold;
+
+}
+
+
     </style>
 </head>
 <body>
-    <div id="dvd-menu">
-        <div class="container">
-            <span class="highlight">
-                <p>Hallo Zusammen,</p>
-                <p>Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</p>
-                <p>Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</p>
-                <p><b>Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€</b></p>
-                <p>Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.</p>
-                <p>Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</p>
-                <p></p>
-            </span>
+    <div id="top-image"></div>
+    <div id="frame-container"></div>
+    <div id="content-container">
+        <div id="dvd-menu">
+            <div class="container">
+                <span class="highlight">
+                    <p>Hallo Zusammen,</p>
+                    <p>Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</p>
+                    <p>Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</p>
+                    <h3><b>Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€</b></h3>
+                    <p>Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.</p>
+                    <p>Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</p>
+                    <p></p>
+                </span>
+            </div>
+            
+            <ul>
+                <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">$$ Dein Eintitt $$</a></li>
+                <li><a href="#">More info coming soon</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="index.html">Exit</a></li>
+            </ul>
         </div>
-       
-        <ul>
-            <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">Klick hier,um dir deinen Eirtitt zu sichern</a></li>
-            <li><a href="#">More info coming soon</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="index.html">Exit</a></li>
-        </ul>
     </div>
 </body>
 </html>
