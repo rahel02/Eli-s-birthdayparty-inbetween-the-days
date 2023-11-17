@@ -11,19 +11,21 @@
             background-color: black;
         }
 
-        #top-image {
-            background-image: url('Eli-s-line.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 100%;
-            height: 17vh;
+        #top-image { background-image: url('Eli-s-line.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
             background-size: 20%;
-            z-index: 1;
-            align-items: center;
+    z-index: 1; 
+   
+    align-items: center;     
         }
+   
 
         #frame-container {
+             
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -46,7 +48,8 @@
             padding: 20px;
             background-color: transparent; /* Set the initial background to transparent */
             border-radius: 10px;
-            font-family: 'ambleregular', 'amblebold';
+       
+            font-family: 'ambleregular','amblebold';
             letter-spacing: 1px;
             border-right: 2px solid;
             text-align: center;
@@ -74,17 +77,15 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline;        
             background-color: blueviolet;
             color: #000;
         }
-
-        h1:hover {
-            text-decoration: underline;
+h1:hover {
+            text-decoration: underline;        
             background-color: blueviolet;
             color: #000;
         }
-
         .highlight {
             color: coral;
         }
@@ -93,32 +94,38 @@
             background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
             padding: 10px;
             border: 2px;
-            max-width: 100vh;
+            max-width: 80vh;
             border-radius: 2vh;
             text-align: center;
             margin: 0 auto; /* Center the container horizontally */
         }
+        
+         @media only screen and (max-width: 768px) 
+             {
+        /* Styles for screens smaller than 768px (e.g., phones) */
+        #dvd-menu {
+            width: 90%;
+            padding: 10px; /* Adjusted padding for smaller screens */
+        }
+    }
+
 
         @font-face {
-            font-family: 'ambleregular';
-            src: url('Amble-Regular-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
+    font-family: 'ambleregular';
+    src:url('Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
         @font-face {
-            font-family: 'ambleregular';
-            src: url('Amble-Bold-webfont.woff') format('woff');
-            font-weight: Bold;
-            font-style: Bold;
-        }
+    font-family: 'ambleregular';
+    src: url('Amble-Bold-webfont.woff') format('woff');
+         
+   font-weight: Bold;
+    font-style: Bold;
 
-        @media only screen and (max-width: 768px) {
-            /* Styles for screens smaller than 768px (e.g., phones) */
-            #dvd-menu {
-                width: 90%;
-            }
-        }
+}
+
+
     </style>
 </head>
 <body>
@@ -137,7 +144,7 @@
                     <p></p>
                 </span>
             </div>
-
+            
             <ul>
                 <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">$$ Dein Eintitt $$</a></li>
                 <li><a href="#">More info coming soon</a></li>
