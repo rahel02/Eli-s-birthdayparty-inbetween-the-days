@@ -25,13 +25,13 @@
         top: 50%;
             left: 50%;
             position: absolute;
-            text-transform: translate (-50%,-50%)  
+         transform: translate (-50%,-50%)  
         }
-        
+       
         span{
-            font-family: serif;
-            color: chartreuse;
-            text-transform: uppercase;
+            font-family: "ambleregular";
+            color: coral;
+         transform: translate();
             animation:blink 3s linear infinite;
         }
         
@@ -40,6 +40,13 @@
             50%{opacity: .5;};
             100%{opacity: 1;}
         }
+        
+               @font-face {
+    font-family: 'ambleregular';
+    src:url('Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
     </style>
 
 </head>
