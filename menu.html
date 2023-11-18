@@ -1,19 +1,4 @@
->Hallo Zusammen,
 
-Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.
-Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.
-
-Hier noch ein paar Fakten:
- 
-- Freitag 29.12.2023
-- Start: 22 Uhr - 5 Uhr
-- 10 € via Paypal an elias.wd@gmx.de
-
-Bitte schreibt den/die vollen Name(n) in den Betreff der Zahlung. 
-
-Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.
-
-Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +12,15 @@ Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.
             /* Hide overflow to prevent scrollbars */
             background-color: black;
         }
-
-        #top-image { background-image: url('Eli-s-line.png'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 70%;
-    height: 6vh;
-            background-size: 30%;
-    z-index: 1; 
-   
-    align-items: center;
-            padding: inherit;
-        }
+        
+        #top-image {     position: absolute;
+            height: 10%;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 70%;
+            max-height: 70%;
+             }
    
 
         #frame-container {
@@ -65,7 +46,7 @@ Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.
             width: 800px;
             padding: 20px;
             background-color: transparent; /* Set the initial background to transparent */
-            border-radius: 10px;
+            border-radius: 1px;
        
             font-family: 'ambleregular','amblebold';
             letter-spacing: 1px;
@@ -158,7 +139,7 @@ h1:hover {
     
     <title>Between the days</title>
     <audio autoplay controls loop src="Spray%20-%20Witches%20Drinner.mp3":> </audio>
-    
+    <img id="top-image" src="Eli-s-line.png" alt="Eli's Line Image">
     <div id="top-image"></div>
     <div id="frame-container"></div>
     <div id="content-container">
@@ -188,3 +169,4 @@ h1:hover {
     </div>
 </body>
 </html>
+
