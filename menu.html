@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
             font-family: 'ambleregular';
             color: black;
             overflow: hidden;
-            /* Hide overflow to prevent scrollbars */
             background-color: black;
         }
 
-        #top-image {     position: absolute;
-            height: 10%;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 70%;
-            max-height: 70%;
-            z-index: 4;
+        #top-image {
+            background-image: url('Eli-s-line.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 6vh;
+            background-size: 30%;
+            z-index: 1;
+            align-items: center;
+            padding: inherit;
         }
-   
 
         #frame-container {
-             
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             position: absolute;
             width: 20%;
             height: 20%;
-            z-index: 2; /* Send the frame to the back */
+            z-index: 2;
         }
 
         #content-container {
@@ -38,16 +39,15 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            position: relative; /* Ensure relative positioning for child elements */
+            position: relative;
         }
 
         #dvd-menu {
-            width: 800px;
-           
-            background-color: transparent; /* Set the initial background to transparent */
+            width: 90%;
+            padding: 20px;
+            background-color: transparent;
             border-radius: 10px;
-       
-            font-family: 'ambleregular','amblebold';
+            font-family: 'ambleregular', 'amblebold';
             letter-spacing: 1px;
             border-right: 2px solid;
             text-align: center;
@@ -69,100 +69,98 @@
         a {
             text-decoration: none;
             color: coral;
-            font-size: 24px;
+            font-size: 18px;
             transition: background-color 0.3s, color 0.3s;
             opacity: 1;
         }
 
         a:hover {
-            text-decoration: underline;        
+            text-decoration: underline;
             background-color: blueviolet;
             color: #000;
         }
-h1:hover {
-            text-decoration: underline;        
+
+        h1:hover {
+            text-decoration: underline;
             background-color: blueviolet;
             color: #000;
         }
+
         .highlight {
             color: coral;
         }
 
         .container {
-            background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
-          
+            background-color: rgba(138, 43, 226, 0.6);
+            padding: 10px;
             border: 2px;
             max-width: 80vh;
             border-radius: 2vh;
             text-align: center;
-            margin: 0 auto; /* Center the container horizontally */
+            margin: 0 auto;
+            margin-top: 6vh;
         }
-        
+
         @media only screen and (max-width: 768px) {
-    #dvd-menu {
-        width: 90%;
-        padding: 8px;
-    }
+            #dvd-menu {
+                width: 90%;
+                padding: 8px;
+            }
 
-    .container {
-        max-width: 90%;
-    }
+            .container {
+                max-width: 90%;
+            }
 
-    a {
-        font-size: 16px;
-    }
-}
-
-
+            a {
+                font-size: 16px;
+            }
+        }
 
         @font-face {
-    font-family: 'ambleregular';
-    src:url('Amble-Regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+            font-family: 'ambleregular';
+            src: url('Amble-Regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         @font-face {
-    font-family: 'ambleregular';
-    src: url('Amble-Bold-webfont.woff') format('woff');
-         
-   font-weight: Bold;
-    font-style: Bold;
-
-}
-
+            font-family: 'ambleregular';
+            src: url('Amble-Bold-webfont.woff') format('woff');
+            font-weight: Bold;
+            font-style: Bold;
+        }
 
     </style>
 </head>
 <body>
-    
-    <title>Between the days</title>
-    <audio autoplay controls loop src="Spray%20-%20Witches%20Drinner.mp3":> </audio>
-    <img id="top-image" src="Eli-s-line.png" alt="Eli's Line Image">
-    <div id="top-image"></div>
-    <div id="frame-container"></div>
-    <div id="content-container">
-        <div id="dvd-menu">
-            <div class="container">
-                <span class="highlight">
-                    <p>Hallo Zusammen,</p>
-                    <p>Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</p>
-                    <p>Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</p>
-                    <h3><b>Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€</b></h3>
-                    <p>Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt.(Es wird voraussichtlich keine Abenkasse geben)</p>
-                    <p>Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</p>
-                    <p></p>
-                </span>
-            </div>
-            
-            <ul>
-                <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">$$ klicke hier um dein Ticket zu bezahlen $$</a></li>
-                <li><a href="#">More info coming soon</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="index.html">Exit</a></li>
-                
-            </ul>
+
+<title>Between the days</title>
+<audio autoplay controls loop src="Spray%20-%20Witches%20Drinner.mp3":> </audio>
+
+<div id="top-image"></div>
+<div id="frame-container"></div>
+<div id="content-container">
+    <div id="dvd-menu">
+        <div class="container">
+            <span class="highlight">
+                <p>Hallo Zusammen,</p>
+                <p>Wir möchten mit Euch das Jahr 2023 gebührend verabschieden.</p>
+                <p>Dafür haben wir eine Off-Location gemietet und laden Euch hiermit ein.</p>
+                <h3><b>Freitag 29.12.2023; Start: 22 Uhr; Eintritt: 10€</b></h3>
+                <p>Wir freuen uns über eine rasche Zahlung, die Tickets sind begrenzt. (Es wird voraussichtlich keine Abenkasse geben)</p>
+                <p>Falls ihr noch Personen mitbringen möchtet, stimmt Euch bitte mit uns ab.</p>
+                <p></p>
+            </span>
         </div>
+
+        <ul>
+            <li> <a href="https://www.paypal.com/paypalme/eliasdiederundich">$$ klicke hier um dein Ticket zu bezahlen $$</a></li>
+            <li><a href="#">More info coming soon</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="index.html">Exit</a></li>
+        </ul>
     </div>
+</div>
 </body>
 </html>
