@@ -11,17 +11,14 @@
             background-color: black;
         }
 
-        #top-image { background-image: url('Eli-s-line.png'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 70%;
-    height: 6vh;
-            background-size: 30%;
-    z-index: 1; 
-   
-    align-items: center;
-            padding: inherit;
+        #top-image {     position: absolute;
+            height: 10%;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 70%;
+            max-height: 70%;
+            z-index: 4;
         }
    
 
@@ -46,7 +43,7 @@
 
         #dvd-menu {
             width: 800px;
-            padding: 20px;
+           
             background-color: transparent; /* Set the initial background to transparent */
             border-radius: 10px;
        
@@ -93,10 +90,9 @@ h1:hover {
 
         .container {
             background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
-            padding: 10px;
+          
             border: 2px;
             max-width: 80vh;
-            margin-top: 6vh
             border-radius: 2vh;
             text-align: center;
             margin: 0 auto; /* Center the container horizontally */
@@ -141,7 +137,7 @@ h1:hover {
     
     <title>Between the days</title>
     <audio autoplay controls loop src="Spray%20-%20Witches%20Drinner.mp3":> </audio>
-    
+    <img id="top-image" src="Eli-s-line.png" alt="Eli's Line Image">
     <div id="top-image"></div>
     <div id="frame-container"></div>
     <div id="content-container">
@@ -164,8 +160,7 @@ h1:hover {
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="index.html">Exit</a></li>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+                
             </ul>
         </div>
     </div>
