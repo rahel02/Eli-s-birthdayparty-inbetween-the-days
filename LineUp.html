@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'ambleregular';
+            color: black;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        #top-image {  
+            height: 25%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            position: fixed;
+             }
+   
+
+        #frame-container {
+             
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            z-index: 2; 
+        }
+
+        #content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative; 
+        }
+
+        #dvd-menu {
+            width: 800px;
+            padding: 20px;
+            background-color: transparent; 
+            border-radius: 1px;
+       
+            font-family: 'ambleregular','amblebold';
+            letter-spacing: 1px;
+            border-right: 2px solid;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: coral;
+            font-size: 24px;
+            transition: background-color 0.3s, color 0.3s;
+            opacity: 1;
+        }
+
+        a:hover {
+            text-decoration: underline;        
+            background-color: blueviolet;
+            color: #000;
+        }
+h1:hover {
+            text-decoration: underline;        
+            background-color: blueviolet;
+            color: #000;
+        }
+        .highlight {
+            color: coral;
+
+        }
+
+        .container {
+            background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
+            padding: 10px;
+            border: 2px;
+            max-width: 80vh;
+            margin-top: 6vh
+            border-radius: 2vh;
+            text-align: center;
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        
+        @media only screen and (max-width: 768px) {
+    #dvd-menu {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+.highlight {
+    background-color: blue;
+}
+
+        @font-face {
+    font-family: 'ambleregular';
+    src:url('Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        @font-face {
+    font-family: 'ambleregular';
+    src: url('Amble-Bold-webfont.woff') format('woff');
+         
+   font-weight: Bold;
+    font-style: Bold;
+
+}
+       
+
+    .news-ticker {
+      white-space: nowrap; /* Prevent text from wrapping */
+      overflow: hidden; /* Hide overflow to create the ticker effect */ 
+        animation: ticker 10s infinite linear;
+        padding: inherit;
+        color: blue;
+    }
+
+    @keyframes ticker {
+      from {
+        transform: translateX(100%); /* Start offscreen to the right */
+      }
+      to {
+        transform: translateX(-100%); /* Move to the left */
+      }
+    }
+
+    .news-item {
+      display: inline-block;
+      padding: 0 20px; /* Adjust padding as needed */
+      font-size: 15px;
+        
+      
+    }
+  
+    </style>
+</head>
+<body>
+    
+    <title>Between the days the Line up</title>
+   
+    <center> <img id="top-image" src="DVD_ELI.png" alt="Eli's Line Image"></center>
+    <div id="top-image"></div>
+
+<div class="news-ticker">
+  <div class="news-item">
+        
+         <center>  <h1 > LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP  LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP LINE-UP</h1></center>
+    </div>
+    </div>
+    <div id="frame-container"></div>
+    <div id="content-container">
+        
+        <div id="dvd-menu">
+            
+            <div class="container">
+                <span class="highlight">
+                    
+                  
+                    
+                    <h1><a href=" https://instagram.com/andre_wissy">Wissy</a><a href="https://instagram.com/kimono.wav"> b2b Kimono</a></h1>
+                     <h1><a href="https://instagram.com/groovyjuri
+                         ">Groovyjuri</a> <a href="https://instagram.com/christakk"> b2b Christa K</a></h1>
+                     <h1><a href="https://www.instagram.com/dj_trackselektor/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">DJ Tackselektor</a></h1>
+                     <h1><a href=" https://instagram.com/florisduq">Floris</a></h1>
+                    
+                   
+                </span>
+            </div>
+            
+            <ul>
+             
+                <li><a href="menu.html">Exit</a></li>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
