@@ -4,28 +4,25 @@
 <html lang="en">
 <head>
     <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
         body {
             margin: 0;
             font-family: 'ambleregular';
             color: black;
             overflow: hidden;
-            background-color: black;
-            
-        }
-        
-        h1{
-            font-family: 'ambleregular';
-            color: blue;
+ background-color: black;
         }
         
         p{
-            color: coral
+            color: coral;
         }
         
-        h2 {
-            color: coral
+           h2{
+            color: coral;
         }
-        
         
         #top-image {  
             height: 10%;
@@ -46,7 +43,7 @@
             position: absolute;
             width: 20%;
             height: 20%;
-            z-index: 2; 
+            z-index: 2; /* Send the frame to the back */
         }
 
         #content-container {
@@ -54,13 +51,13 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            position: relative; 
+            position: relative; /* Ensure relative positioning for child elements */
         }
 
         #dvd-menu {
             width: 800px;
             padding: 20px;
-            background-color: transparent; 
+            background-color: transparent; /* Set the initial background to transparent */
             border-radius: 1px;
        
             font-family: 'ambleregular','amblebold';
@@ -84,7 +81,7 @@
 
         a {
             text-decoration: none;
-            color: blueviolet;
+            color: coral;
             font-size: 24px;
             transition: background-color 0.3s, color 0.3s;
             opacity: 1;
@@ -101,11 +98,11 @@ h1:hover {
             color: #000;
         }
         .highlight {
-            color: rgb(138, 43, 226);
+            color: coral;
         }
 
         .container {
-            background-color: rgba(255,127,80,0.8);
+            background-color: rgba(138, 43, 226, 0.6); /* Set the container background to semi-transparent */
             padding: 10px;
             border: 2px;
             max-width: 80vh;
@@ -147,8 +144,6 @@ h1:hover {
 
 }
         
-        
-
     </style>
 </head>
 <body>
@@ -157,7 +152,7 @@ h1:hover {
     
     <title>In between the years</title>
     <audio autoplay controls loop src="Spray%20-%20Witches%20Drinner.mp3":> </audio>
-    <center> <img id="top-image" src="Eli-s-line.png" alt="Eli's Line Image"></center>
+    <center> <img id="top-image" src="Eli-or.png" alt="Eli's Line Image"></center>
     <div id="top-image"></div>
     <div id="frame-container"></div>
     <div id="content-container">
@@ -165,7 +160,7 @@ h1:hover {
             
             <center><p>No discrimination.</p>
 <p>Everyone is embraced regardless of background, identity, or ability. </p>
-                <p>We prioritize respect, fostering a safe environment where diverse perspectives are celebrated.</p></center>
+    <p>We prioritize respect, fostering a safe environment where diverse perspectives are celebrated.</p></center>
             
             <center><h2>Save the date: 29.12.2023 </h2></center>
             
